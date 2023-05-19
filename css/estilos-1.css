@@ -1,0 +1,248 @@
+@charset 'UTF-8';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+body {
+    background-color: #e11364;
+    margin: 1rem 2rem 1rem 2rem;
+}
+
+/*** Header ***/
+.Header {
+    background-color: #BC105C;
+    padding: 1rem;
+    margin: 3rem 3rem 1rem 3rem;
+    border-left: 7px solid #ffffff;
+    border-right: 7px solid #ffffff;
+}
+
+.Header h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+}
+
+/*** Main ***/
+.Main {
+    background-color: #E11364;
+    border-radius: .5rem;
+    padding: 1rem;
+    margin: 1rem 2rem 1rem 2rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+/*** Main aside ***/
+.Main .aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0rem 3rem 1rem 0rem;
+}
+
+.Main .aside figure {
+    height: auto;
+    border-radius: .5rem;
+}
+
+.Main .aside figure img {
+    max-width: 100%;
+    height: 110%;
+    border-left: 7px solid #ffffff;
+    border-right: 7px solid #ffffff;
+}
+
+/*** Main secction ***/
+.Main .section {
+    text-align: center;
+    padding: 1rem;
+    background-color: #BC105C;
+    border-radius: .25rem;
+}
+
+.Main .section .header h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 1rem 0 2rem 0;
+    text-align: left;
+}
+
+/*** Main secction article ***/
+.Main .section .article {
+    background-color: #ffffff;
+    border-radius: .5rem;
+    margin-bottom: 3rem;
+    padding: 1rem;
+}
+
+.Main .section .article .header h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: right;
+    color: #BC105C;
+    border-bottom: 3px dotted #BC105C;
+}
+
+.Main .section .article .figure img {
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.Main .section .article p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    font-weight: 500;
+}
+
+.Main .section .article .footer {
+    margin: 1rem;
+}
+
+.Main .section .article .footer a {
+    background-color: #2C8F20;
+    color: #ffffff;
+    border: none;
+    border-radius: .25rem;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.Main .section .article .footer a:hover {
+    background-color: #e11364;
+}
+
+/*** Main footer ***/
+.Main .footer {
+    text-align: center;
+    margin: 2rem 3rem 0rem 3rem;
+}
+
+.Main .footer a {
+    background-color: #2C8F20;
+    color: #ffffff;
+    border: none;
+    border-radius: .25rem;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block
+}
+
+.Main .footer a:hover {
+    background-color: #E96093;
+}
+
+/*** Footer ***/
+.Footer {
+    background-color: #E96093;
+    color: white;
+    font-size: .75rem;
+    border-radius: .25rem;
+    padding: 1rem;
+    margin: 1rem 3rem 1rem 3rem;
+    text-align: center;
+}
+
+/*** Media ***/
+@media screen and (max-width: 1440px) {
+    body {
+        background-color: #e11364;
+        margin: 1rem 1rem 1rem 1rem;
+    }
+
+    /** media Main ***/
+    .Main {
+        background-color: #E11364;
+        border-radius: .5rem;
+        padding: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .Main .aside {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-columns: auto auto;
+        align-items: center;
+        margin: 0rem 0rem 2rem 0rem;
+        border-radius: .25rem;
+    }
+
+    .Main .aside figure {
+        height: auto;
+        padding: 0rem 1.5rem 0rem 1.5rem;
+        margin: 1.5rem;
+        padding: 0;
+    }
+
+    .Main .aside figure img {
+        max-width: 100%;
+        height: auto;
+        border: 0px;
+        border-top: 7px solid #ffffff;
+        border-bottom: 7px solid #ffffff;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        background-color: #e11364;
+        margin: 1rem 1rem 1rem 1rem;
+    }
+
+    /** media Main ***/
+    .Main {
+        background-color: #E11364;
+        border-radius: .5rem;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Main .aside {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-columns: auto auto;
+        align-items: center;
+    }
+
+    .Main .aside figure {
+        height: auto;
+        padding: 1.5rem 0rem 1.5rem 0rem;
+        margin: 1rem;
+        padding: 0;
+    }
+
+    .Main .aside figure img {
+        max-width: 100%;
+        height: auto;
+        border: 0px;
+        border-left: 7px solid #ffffff;
+        border-right: 7px solid #ffffff;
+    }
+}
